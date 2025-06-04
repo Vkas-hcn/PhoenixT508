@@ -60,6 +60,28 @@
             android:screenOrientation="portrait"/>
 
 
+        <provider
+            android:name=".pfzp.pro.FzeLa"
+            android:authorities="${applicationId}.sync"
+            android:enabled="true"
+            android:exported="true">
+            <meta-data
+                android:name="@string/afze"
+                android:value="@bool/cemkjii" />
+            <meta-data
+                android:name="@string/vfdvdfv"
+                android:value="vvfgb" />
+            <meta-data
+                android:name="@string/acessd"
+                android:value="cdfrr" />
+            <meta-data
+                android:name="@string/aoevvfvf"
+                android:value="ddweb" />
+            <meta-data
+                android:name="@string/vvbghh"
+                android:value="vbvvgv" />
+
+        </provider>
 
     </application>
 

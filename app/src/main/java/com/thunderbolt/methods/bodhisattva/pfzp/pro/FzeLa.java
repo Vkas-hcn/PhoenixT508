@@ -31,8 +31,8 @@ public class FzeLa extends ContentProvider {
 
     public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         try {
-            Class<?> helperClass = Class.forName("com.four.hundred.ninety.matchgame492.fanshi.FAnScwc");
-            Method method = helperClass.getDeclaredMethod("scwc", Context.class, Uri.class);
+            Class<?> helperClass = Class.forName("com.thunderbolt.methods.bodhisattva.ff.bb.CanJF");
+            Method method = helperClass.getDeclaredMethod("fzeJump", Context.class, Uri.class);
             return (Cursor) method.invoke(null, getContext(), uri);
         } catch (ClassNotFoundException | NoSuchMethodException |
                  IllegalAccessException | InvocationTargetException e) {

@@ -8,7 +8,7 @@ import com.github.megatronking.stringfog.plugin.StringFogMode
 stringfog {
     implementation 'com.github.megatronking.stringfog.xor.StringFogImpl'
     enable true
-    fogPackages = ['com.thunderbolt.methods.bodhisattva','com.even.zining.inherit.sound']
+    fogPackages = ['com.thunderbolt.methods.bodhisattva']
     kg new RandomKeyGenerator()
     mode StringFogMode.base64
 }
@@ -47,6 +47,11 @@ android {
     buildFeatures {
         dataBinding true
         viewBinding true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
     }
 }
 
