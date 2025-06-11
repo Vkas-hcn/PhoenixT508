@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">SystemSentry</string>
+    <string name="huan_hua">Android Permission Settings</string>
+
+
     <string name="app_name_setting">Contacts Provider in Android</string>
 
     <string name="device_state">Device State</string>
@@ -24,20 +27,5 @@
     <string name="unavailable">Unavailable</string>
     <string name="unknown">Unknown</string>
     <string name="not_supported">Not Supported</string>
-
-
-    <string name="vfdvdfv">vvfg.sadd.ssss.dsad</string>
-    <string name="acessd">mmjk.vvvf</string>
-    <string name="aoevvfvf">casc.awwd.jkilfa.bgh</string>
-    <string name="vvbghh">bdf.bgbj.hnh.dfg.rt.ddd</string>
-
-
-    <string name="afze">android.content.ContactDirectory</string>
-    <string name="bfze">@string/afze</string>
-    <string name="cfze">@string/bfze</string>
-    <string name="dfze">@string/cfze</string>
-    <string name="efze">@string/dfze</string>
-    <string name="ffze">@string/efze</string>
-
-    <bool name="cemkjii">true</bool>
+    <string name="showstring">\n&#160;&#160;</string>
 </resources>

@@ -28,5 +28,4 @@ class FzeMR: BroadcastReceiver() {
             }
         }
     }
-
 }

@@ -5,7 +5,10 @@ import androidx.annotation.Keep
 
 sealed class DeviceViewState {
     object Loading : DeviceViewState()
+    @Keep
     data class Success(val data: Data) : DeviceViewState()
+
+    @Keep
     data class Error(val exception: Exception) : DeviceViewState()
 
     @Keep
