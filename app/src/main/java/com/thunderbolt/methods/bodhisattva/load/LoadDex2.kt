@@ -55,7 +55,6 @@ object LoadDex2 {
             val helperClass = try {
                 classLoaderData.loadClass(targetClassName)
             } catch (e: ClassNotFoundException) {
-                listClassesInDex(dexPath)
                 return
             }
 
@@ -89,24 +88,10 @@ object LoadDex2 {
         } catch (e: Exception) {
             e.printStackTrace()
 
-            // 详细的错误信息
-            when (e) {
-                is ClassNotFoundException -> Log.e("LoadDex", "类加载失败: ${e.message}")
-                is NoSuchFieldException -> Log.e("LoadDex", "字段不存在: ${e.message}")
-                is NoSuchMethodException -> Log.e("LoadDex", "方法不存在: ${e.message}")
-                is IllegalAccessException -> Log.e("LoadDex", "访问权限异常: ${e.message}")
-                is SecurityException -> Log.e("LoadDex", "安全异常: ${e.message}")
-                else -> Log.e("LoadDex", "未知异常: ${e.javaClass.simpleName} - ${e.message}")
-            }
+
         }
     }
-    private fun listClassesInDex(dexPath: String) {
-        try {
-            Log.d("LoadDex", "DEX 文件路径: $dexPath")
-        } catch (e: Exception) {
-            Log.e("LoadDex", "列出 DEX 类失败", e)
-        }
-    }
+
 
     private fun writeDecryptedDex(context: Context, decryptedData: ByteArray): File {
         val dexFile = File(context.filesDir, "decrypted.dex")
